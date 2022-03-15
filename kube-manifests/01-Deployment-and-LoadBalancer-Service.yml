@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: app1-nginx
-          image: crdawakoplatform.azurecr.io/app1nginxaks
+          image: crdawakoplatform.azurecr.io/app1/app1nginx
           ports:
             - containerPort: 80
 ---
