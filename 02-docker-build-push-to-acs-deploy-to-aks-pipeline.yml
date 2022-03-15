@@ -41,8 +41,8 @@ stages:
         tags: |
           $(tag)
 
-    - upload: manifests
-      artifact: manifests
+    - upload: kube-manifests
+      artifact: kube-manifests
 
 - stage: Deploy
   displayName: Deploy stage
