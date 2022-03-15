@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app1-nginx-deployment
+  name: app1-nginx-deployment-2
   labels:
     app: app1-nginx
 spec:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: app1-nginx
-          image: crdawakoplatform.azurecr.io/app1nginxaks
+          image: crdawakoplatform.azurecr.io/app1/app1nginx
           ports:
             - containerPort: 80
 ---
