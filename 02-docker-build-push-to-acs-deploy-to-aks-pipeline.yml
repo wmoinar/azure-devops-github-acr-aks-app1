@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: '0a3055a3-ae1a-42fc-8e2b-32762098fe81'
   imageRepository: 'app1nginxaks'
   containerRegistry: 'crdawakoplatform.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'crdawakoplatform1489bda2-auth'
 
