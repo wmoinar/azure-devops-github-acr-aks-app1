@@ -27,8 +27,8 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'manual-aksdevopsacr-svc'
-        repository: 'crdawakoplatform'
-        command: 'buildAndPush'
+        repository: 'crdawakoplatform' #name image
+        command: 'buildAndPush' 
         Dockerfile: '**/Dockerfile'
         tags: |
           $(tag)
